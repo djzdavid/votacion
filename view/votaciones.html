@@ -1,0 +1,97 @@
+<!-- @author dbravo -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Votaciones</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <h3>FORMULARIO DE VOTACIÓN:</h3>
+    <form id="form" action="#">
+        <fieldset style="width: 70%;">
+            <table>
+                <tr>
+                    <td>Nombre y Apellido</td>
+                    <td>
+                        <input type="text" id="ipt_nombre" name="ipt_nombre">
+                        <small style="color:red;" id="error_nombre"></small>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Alias</td>
+                    <td>
+                        <input type="text" id="ipt_alias" name="ipt_alias">
+                        <small style="color:red;" id="error_alias"></small>
+                    </td>
+                </tr>
+                <tr>
+                    <td>RUT</td>
+                    <td>
+                        <input type="text" id="ipt_rut" name="ipt_rut">
+                        <small style="color:red;" id="error_rut"></small>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>
+                        <input type="text" id="ipt_correo" name="ipt_correo">
+                        <small style="color:red;" id="error_correo"></small>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Región</td>
+                    <td>
+                        <select id="ipt_region" name="ipt_region">
+                            <option value="">select</option>
+                        </select>
+                        <small style="color:red;" id="error_region"></small>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Comuna</td>
+                    <td>
+                        <select id="ipt_comuna" name="ipt_comuna">
+                            <option value="">select</option>
+                        </select>
+                        <small style="color:red;" id="error_comuna"></small>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Candidato</td>
+                    <td>
+                        <select id="ipt_candidato" name="ipt_candidato">
+                            <option value="">select</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Como se enteró de Nosotros</td>
+                    <td>
+                        <input type="checkbox" id="ipt_web" name="ipt_conocer[]" value="web">
+                        <label for="ipt_web">Web</label>&nbsp;
+                        <input type="checkbox" id="ipt_tv" name="ipt_conocer[]" value="tv">
+                        <label for="ipt_tv">TV</label>&nbsp;
+                        <input type="checkbox" id="ipt_redes" name="ipt_conocer[]" value="redes">
+                        <label for="ipt_redes">Redes Sociales</label>&nbsp;
+                        <input type="checkbox" id="ipt_amigo" name="ipt_conocer[]" value="amigo">
+                        <label for="ipt_amigo">Amigo</label>
+                        <small style="color:red;" id="error_conocer"></small>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <button type="submit">Votar</button>
+            <small id="success"></small>
+        </fieldset>
+    </form>
+</body>
+
+<script src="js/load.js"></script>
+<script src="js/form.js"></script>
+
+</html>

@@ -1,0 +1,11 @@
+@author dbravo
+12/09/2023
+
+Mysql MariaDB 10.4
+Php 8.1.17
+
+1.- Copiar proyecto en servidor Web. Se recomienda XAMP o LAMP.
+2.- Ejecutar script.sql del directorio "sql" en su servidor de base de datos MySql.
+3.- Configurar los accesos al servidor de base de datos en el archivo model/class.database.php .
+4.- Ingresar a url http://localhost/votacion .
+
